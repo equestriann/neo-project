@@ -79,11 +79,39 @@ main .good-details {
     line-height: 25px;
     text-align: left;
     margin-left: 25px;
-    margin-top: 20px;
+    margin-right: 25px;
+    margin-top: 40px;
+}
+
+main .good-price {
+    color: #FFA542;
+    float: right;
+}
+
+main .good p {
+    padding: 10px;
 }
 
 .star {
     color: #FFCE7F;
+}
+
+.buy-button {
+    width: 65px;
+    height: 21px;
+    background: transparent;
+    border: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 21px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+    float: right;
+}
+
+.buy-button:hover {
+    opacity: 0.5;
 }
 
 footer {
