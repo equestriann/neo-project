@@ -18,6 +18,7 @@ body {
 
 header {
     margin-bottom: 30px;
+    padding-top: 10px;
 }
 
 header .logo {
@@ -28,6 +29,7 @@ header .logo {
 header ul.nav {
     list-style: none;
     float: right;
+    margin-right: 15px;
 }
 
 header ul.nav li {
@@ -39,6 +41,47 @@ header ul.nav li {
 
 header ul.nav li:hover {
     opacity: 0.5;
+}
+
+header .fav-image {
+    width: 22px;
+    height: 20px;
+    color: #838383;
+}
+
+header .cart-image {
+    width: 24px;
+    height: 22px;
+    color: #838383;
+}
+
+header .counter-fav-circle {
+    position: absolute;
+    color: #FFA542;
+    width: 13px;
+    height: 13px;
+    top: 17px;
+    right: 223px;
+}
+
+header .counter-cart-circle {
+    position: absolute;
+    color: #FFA542;
+    width: 15px;
+    height: 15px;
+    top: 17px;
+    right: 175px;
+}
+
+header .count {
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 16px;
+    right: 179px;
 }
 
 .category-name {

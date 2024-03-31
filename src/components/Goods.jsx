@@ -1,4 +1,7 @@
-export default function Wired(props) {
+
+
+export default function Goods(props) {
+
     return (
         <div>
             <div className="good">
@@ -11,7 +14,7 @@ export default function Wired(props) {
                     <p>
                         <span className="star">&#9733;</span>
                         {props.good.rating}
-                        <button className="buy-button">Купить</button>
+                        <button className="buy-button" onClick={props.increment}>Купить</button>
                     </p>
                 </div>
             </div>
