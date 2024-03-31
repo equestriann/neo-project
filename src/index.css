@@ -188,6 +188,7 @@ footer {
 .footer-column {
     flex: 1;
     margin: 15px;
+    font-size: 17px;
 }
 
 .footer-logo {

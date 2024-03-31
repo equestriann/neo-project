@@ -20,7 +20,10 @@ export default function Footer () {
                     <p>Условия сервиса</p>
                     <p>
                         <MdOutlineLanguage className="language"></MdOutlineLanguage>
-                        Рус Eng
+                        <b>
+                            <span style={{color: "#FFA542", padding: "5px"}}>Рус</span>
+                        </b>
+                        <span>Eng</span>
                     </p>
                 </div>
                 <div className="footer-column">
