@@ -19,6 +19,7 @@ body {
 header {
     margin-bottom: 30px;
     padding-top: 10px;
+    position: relative;
 }
 
 header .logo {
@@ -37,6 +38,7 @@ header ul.nav li {
     margin-left: 25px;
     cursor: pointer;
     transition: opacity 500ms ease;
+    text-align: center;
 }
 
 header ul.nav li:hover {
@@ -47,30 +49,30 @@ header .fav-image {
     width: 22px;
     height: 20px;
     color: #838383;
+    position: relative;
+    display: inline-block;
 }
 
 header .cart-image {
     width: 24px;
     height: 22px;
     color: #838383;
-}
-
-header .counter-fav-circle {
-    position: absolute;
-    color: #FFA542;
-    width: 13px;
-    height: 13px;
-    top: 17px;
-    right: 223px;
+    position: relative;
+    display: inline-block;
 }
 
 header .counter-cart-circle {
     position: absolute;
-    color: #FFA542;
-    width: 15px;
-    height: 15px;
-    top: 17px;
-    right: 175px;
+    top: 3px;
+    right: 7px;
+    background-color: #FFA542;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 10px;
+    width: 10px; /* Выберите подходящую ширину */
+    height: 10px;
+    text-align: center;
 }
 
 header .count {
@@ -174,24 +176,18 @@ footer {
     background-color: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 30px 30px 0 0;
-    padding-top: 30px;
     margin-top: 40px;
-    justify-content: space-between;
-    align-content: center;
 }
 
 .footer-columns {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding-left: 70px;
+    padding: 10px;
 }
 
 .footer-column {
     flex: 1;
-    margin: 10px;
-    column-width: auto;
-
+    margin: 15px;
 }
 
 .footer-logo {
@@ -204,6 +200,26 @@ footer {
 footer p {
     font-weight: 400;
     padding: 2px;
+    text-align: left;
+    margin-left: 50px;
 }
 
+footer .language {
+    width: 20px;
+    height: 20px;
+    color: #838383;
+    top: 2px;
+    left: 2px;
+    padding-right: 5px;
+}
+
+footer .social-group {
+    text-align: right;
+}
+
+footer .social-icon {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
 
