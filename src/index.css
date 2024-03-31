@@ -16,6 +16,10 @@ body {
     margin: 10px auto;
 }
 
+header {
+    margin-bottom: 30px;
+}
+
 header .logo {
     font-weight: 700;
     font-size: 25px;
@@ -37,11 +41,18 @@ header ul.nav li:hover {
     opacity: 0.5;
 }
 
-#category-name {
-    width: 114px;
+.category-name {
+    width: initial;
     height: 24px;
     top: 88px;
     left: 182px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #838383;
 }
 
 main {
@@ -50,8 +61,7 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 150px;
-    padding-top: 100px;
+    /*padding: 15px;*/
 }
 
 main .good {
@@ -62,7 +72,7 @@ main .good {
     height: 407px;
     top: 132px;
     left: 182px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 main .good img {
@@ -89,11 +99,12 @@ main .good-price {
 }
 
 main .good p {
-    padding: 10px;
+    padding: 15px;
 }
 
 .star {
     color: #FFCE7F;
+    padding-right: 5px;
 }
 
 .buy-button {
@@ -116,27 +127,40 @@ main .good p {
 
 footer {
     width: 1110px;
-    height: 100px;
+    height: 130px;
     background-color: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 30px 30px 0 0;
-    padding: 20px;
+    padding-top: 30px;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .footer-columns {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-left: 70px;
 }
 
 .footer-column {
     flex: 1;
     margin: 10px;
     column-width: auto;
+
+}
+
+.footer-logo {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
 }
 
 footer p {
     font-weight: 400;
+    padding: 2px;
 }
 
 
