@@ -8,7 +8,9 @@ export default function Header(props) {
     return (
         <header>
             <div>
-                <span className="logo">QPICK</span>
+                <Link to={`/`} style={{ textDecoration: "none" }}>
+                    <span className="logo">QPICK</span>
+                </Link>
                 <ul className="nav">
                     <li>
                         <FaRegHeart className="fav-image"/>
