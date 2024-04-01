@@ -8,18 +8,25 @@ import {
 import Root from "./routes/root.jsx";
 import ErrorPage from "./error-page.jsx";
 import Cart from "./routes/cart.jsx";
+import MainPage from "./routes/main-page.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
         errorElement: <ErrorPage />,
+        children: [
+            {
+                path: "main",
+                element: <MainPage />,
+            },
+            {
+                path: "cart",
+                element: <Cart />
+            }
+        ]
 
     },
-    {
-        path: "/cart",
-        element: <Cart />
-    }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

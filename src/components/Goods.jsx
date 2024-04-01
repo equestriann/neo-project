@@ -1,5 +1,3 @@
-
-
 export default function Goods(props) {
 
     return (
@@ -14,7 +12,7 @@ export default function Goods(props) {
                     <p>
                         <span className="star">&#9733;</span>
                         {props.good.rating}
-                        <button className="buy-button" onClick={props.increment}>Купить</button>
+                        <button className="buy-button" >Купить</button>
                     </p>
                 </div>
             </div>

@@ -4,11 +4,10 @@ import {Link} from "react-router-dom";
 
 
 export default function Header(props) {
-
     return (
         <header>
             <div>
-                <Link to={`/`} style={{ textDecoration: "none" }}>
+                <Link to={`/main`} style={{ textDecoration: "none" }}>
                     <span className="logo">QPICK</span>
                 </Link>
                 <ul className="nav">
@@ -18,7 +17,9 @@ export default function Header(props) {
                     <li>
                         <Link to={`/cart`}>
                             <RiShoppingCart2Line className="cart-image"/>
-                            <span className="counter-cart-circle">{props.counter}</span>
+                            {
+                                props.length ? <span className="counter-cart-circle">{props.length}</span> : null
+                            }
                         </Link>
                     </li>
                 </ul>
