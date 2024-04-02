@@ -3,7 +3,6 @@ import {RiShoppingCart2Line} from "react-icons/ri";
 import {Link} from "react-router-dom";
 import {useCart} from "./CartContext.jsx";
 
-
 export default function Header() {
 
     const {cart} = useCart()
@@ -22,7 +21,7 @@ export default function Header() {
                         <Link to={`/cart`}>
                             <RiShoppingCart2Line className="cart-image"/>
                             {
-                                cart ? <span className="counter-cart-circle">{cart.length}</span> : null
+                                cart.length ? <span className="counter-cart-circle">{cart.length}</span> : null
                             }
                         </Link>
                     </li>
