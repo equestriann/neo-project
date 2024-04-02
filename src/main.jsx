@@ -9,6 +9,7 @@ import Root from "./routes/root.jsx";
 import ErrorPage from "./error-page.jsx";
 import Cart from "./routes/cart.jsx";
 import MainPage from "./routes/main-page.jsx";
+import {CartProvider} from "./components/CartContext.jsx";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <CartProvider>
+            <RouterProvider router={router} />
+        </CartProvider>
     </React.StrictMode>
 );

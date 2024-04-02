@@ -1,4 +1,12 @@
-export default function Goods({ good, addToCart }) {
+import {useCart} from "./CartContext.jsx";
+
+export default function Goods({ good }) {
+
+    const { addToCart } = useCart()
+
+    const handleBuyClick = () => {
+        addToCart(good)
+    }
 
     return (
         <div>
@@ -12,7 +20,7 @@ export default function Goods({ good, addToCart }) {
                     <p>
                         <span className="star">&#9733;</span>
                         {good.rating}
-                        <button className="buy-button" onClick={() => addToCart(good)}>Купить</button>
+                        <button className="buy-button" onClick={handleBuyClick}>Купить</button>
                     </p>
                 </div>
             </div>
