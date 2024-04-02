@@ -4,13 +4,19 @@ import {useState} from "react";
 import {Outlet} from "react-router-dom";
 
 export default function Root() {
+    const [cart, setCart] = useState([])
+
+    function addToCart (good) {
+        setCart([...cart, good]);
+        console.log(cart)
+    }
 
     return (
         <>
             <div className="wrapper">
-                <Header />
+                <Header cartItemsCount={cart.length}/>
                 <main>
-                    <Outlet />
+                    <Outlet addToCart={addToCart}/>
                 </main>
                 <Footer/>
             </div>
