@@ -4,11 +4,13 @@ export default function Cart () {
 
     const {cart} = useCart()
     const {totalQuantity} = useCart()
+    const {totalPrice} = useCart()
 
     return (
         <div className="wrapper">
             <div>
-                Количество товаров в корзине: {totalQuantity}
+                <p>Количество товаров в корзине: {totalQuantity}</p>
+                <p>Итого: {totalPrice}</p>
                 <hr />
                 <div>
                     {cart.map(good =>
