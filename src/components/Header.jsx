@@ -5,7 +5,8 @@ import {useCart} from "./CartContext.jsx";
 
 export default function Header() {
 
-    const {cart} = useCart()
+    // const {cart} = useCart()
+    const {totalQuantity} = useCart()
 
     return (
         <header>
@@ -21,7 +22,7 @@ export default function Header() {
                         <Link to={`/cart`}>
                             <RiShoppingCart2Line className="cart-image"/>
                             {
-                                cart.length ? <span className="counter-cart-circle">{cart.length}</span> : null
+                                totalQuantity ? <span className="counter-cart-circle">{totalQuantity}</span> : null
                             }
                         </Link>
                     </li>
