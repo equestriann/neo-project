@@ -24,21 +24,21 @@ export const wired = [
 
 export const wireless = [
     {
-        id: 1,
+        id: 4,
         picture:'/img/airpods.png',
         title:'Apple Airpods',
         rating:'4.7',
         price:'9527'
      },
      {
-        id: 2,
+        id: 5,
         picture:'/img/gerlax.png',
         title:'GERLAX GH-04',
         rating:'4.7',
         price:'6527'
      },
      {
-        id: 3,
+        id: 6,
         picture:'/img/borophone.png',
         title:'BOROFONE BO4',
         rating:'4.7',
