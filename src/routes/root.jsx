@@ -8,9 +8,7 @@ export default function Root() {
         <>
             <div className="wrapper">
                 <Header />
-                <main>
-                    <Outlet />
-                </main>
+                <Outlet />
                 <Footer />
             </div>
         </>
