@@ -23,22 +23,35 @@ export default function Cart () {
 
     return (
         <div className="wrapper">
-            <div>
-                <p>Количество товаров в корзине: {totalQuantity}</p>
-                <p>Итого: {totalPrice}</p>
-                <hr />
-                <div>
+            {totalQuantity ?
+                <h3>Корзина</h3> :
+                <h3 style={{textAlign:"center"}}>Корзина пуста</h3>}
+            <div className="cart-content">
+                <div className="cart-item-card">
                     {cart.map(good =>
-                        <div key={good.id}>
+                        <div key={good.id} className="cart-item-info">
+                            <button onClick={() => deleteGood(good)} style={{fontSize: "30px"}}>&#128465;</button>
+                            <img className="cart-item-image" src={good.img} alt=""/>
                             <p>{good.title}</p>
-                            <p>{good.price}</p>
-                            <p>{good.quantity}</p>
-                            <button onClick={() => increment(good)} style={{fontSize:"30px"}}>+</button>
-                            <button onClick={() => decrement(good)} style={{fontSize:"30px"}}>-</button>
-                            <button onClick={() => deleteGood(good)} style={{fontSize:"30px"}}>&#128465;</button>
+                            <p className="cart-item-price-small">{good.price}₽</p>
+                            <span className="cart-item-quantity" onClick={() => increment(good)}
+                                  style={{fontSize: "30px"}}>+</span>
+                            <span>{good.quantity}</span>
+                            <span className="cart-item-quantity" onClick={() => decrement(good)}
+                                  style={{fontSize: "30px"}}>-</span>
+                            <span className="cart-item-price-main">{good.price}₽</span>
                         </div>
                     )}
                 </div>
+                {!totalQuantity ? null :
+                    <div className="total-card">
+                        <span className="total-price">ИТОГО</span>
+                        <span className="total-price">₽{totalPrice}</span>
+                        <p>
+                            <button className="order-button">Перейти к оформлению</button>
+                        </p>
+                    </div>
+                }
             </div>
         </div>
     );
