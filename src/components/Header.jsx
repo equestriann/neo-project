@@ -10,24 +10,22 @@ export default function Header() {
 
     return (
         <header>
-            <div>
-                <Link to={`/main`} style={{ textDecoration: "none" }}>
-                    <span className="logo">QPICK</span>
-                </Link>
-                <ul className="nav">
-                    <li>
-                        <FaRegHeart className="fav-image"/>
-                    </li>
-                    <li>
-                        <Link to={`/cart`}>
-                            <RiShoppingCart2Line className="cart-image"/>
-                            {
-                                totalQuantity ? <span className="counter-cart-circle">{totalQuantity}</span> : null
-                            }
-                        </Link>
-                    </li>
-                </ul>
-            </div>
+            <Link to={`/main`} style={{ textDecoration: "none" }}>
+                <span className="logo">QPICK</span>
+            </Link>
+            <ul className="nav">
+                <li>
+                    <FaRegHeart className="fav-icon"/>
+                </li>
+                <li>
+                    <Link to={`/cart`} style={{ textDecoration: "none" }}>
+                        <RiShoppingCart2Line className="cart-icon"/>
+                        {
+                            totalQuantity ? <span className="cart-counter">{totalQuantity}</span> : null
+                        }
+                    </Link>
+                </li>
+            </ul>
         </header>
     )
 }
