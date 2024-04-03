@@ -5,10 +5,15 @@ export default function Cart () {
     const {cart} = useCart()
     const {totalQuantity} = useCart()
     const {totalPrice} = useCart()
-    const {addToCart} = useCart()
+    const {quantIncrease} = useCart()
+    const {quantDecrease} = useCart()
 
-    function handlePlusClick (good) {
-        addToCart(good)
+    const increment = (good) => {
+        quantIncrease(good)
+    }
+
+    const decrement = (good) => {
+        quantDecrease(good)
     }
 
     return (
@@ -23,7 +28,8 @@ export default function Cart () {
                             <p>{good.title}</p>
                             <p>{good.price}</p>
                             <p>{good.quantity}</p>
-                            <button onClick={handlePlusClick}>+</button>
+                            <button onClick={() => increment(good)}>+</button>
+                            <button onClick={() => decrement(good)}>-</button>
                         </div>
                     )}
                 </div>

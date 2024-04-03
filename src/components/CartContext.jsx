@@ -26,6 +26,26 @@ export const CartProvider = ({ children }) => {
         }
     }
 
+    const quantIncrease = (item) => {
+        const updatedCart = cart.map(cartItem => {
+            if (cartItem.id === item.id) {
+                return {...cartItem, quantity: cartItem.quantity + 1}
+            }
+            return cartItem
+        })
+        setCart([...updatedCart])
+    }
+
+    const quantDecrease = (item) => {
+        const updatedCart = cart.map(cartItem => {
+            if (cartItem.id === item.id) {
+                return {...cartItem, quantity: cartItem.quantity - 1}
+                }
+            return cartItem
+        })
+        setCart(updatedCart.filter((item) => item.quantity > 0))
+    }
+
     const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0)
     const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0)
 
@@ -35,6 +55,8 @@ export const CartProvider = ({ children }) => {
             addToCart,
             totalQuantity,
             totalPrice,
+            quantIncrease,
+            quantDecrease
         }}>
             {children}
         </CartContext.Provider>
