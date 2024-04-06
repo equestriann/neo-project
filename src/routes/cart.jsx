@@ -6,6 +6,7 @@ export default function Cart () {
     const {cart} = useCart()
     const {totalQuantity} = useCart()
     const {totalPrice} = useCart()
+    // const {totalItemPrice} = useCart()
     const {quantIncrease} = useCart()
     const {quantDecrease} = useCart()
     const {deleteItem} = useCart()
