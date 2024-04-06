@@ -4,7 +4,6 @@ body {
     background-color: #EAEAEA;
     font-family: "Montserrat", sans-serif;
     position: relative;
-    min-height: 1629px;
 }
 
 .wrapper {
@@ -75,88 +74,47 @@ header .cart-counter {
 
 /*--------------------MAIN-----------------------*/
 
-.category-name {
-    width: initial;
-    height: 24px;
-    top: 88px;
-    left: 182px;
-    font-size: 20px;
+main {
+    margin-top: 13px;
+    /*margin-bottom: 21px;*/
+}
+
+main p {
+    margin: 0;
+}
+
+main .category-name {
+    padding-bottom: 20px;
     font-weight: 600;
-    line-height: 25px;
-    text-align: left;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    font-size: 20px;
     color: #838383;
 }
 
-main {
+main .category-content {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 main .good {
-    background: #FFFFFF;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #FFFFFF;
     border-radius: 30px;
     width: 350px;
     height: 407px;
-    top: 132px;
-    left: 182px;
-    margin-bottom: 20px;
-}
-
-main .good img {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin-left: 65px;
-    margin-top: 20px;
+    margin-bottom: 26px;
+    box-shadow: 0 0 20px 0 #0000001A;
+;
 }
 
 main .good-details {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 25px;
-    text-align: left;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 40px;
-}
-
-main .good-price {
-    color: #FFA542;
-    float: right;
-}
-
-main .good p {
-    padding: 15px;
-}
-
-.star {
-    color: #FFCE7F;
-    padding-right: 5px;
-}
-
-.buy-button {
-    width: 65px;
-    height: 21px;
-    background: transparent;
-    border: transparent;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 21px;
-    cursor: pointer;
-    transition: opacity 500ms ease;
-    float: right;
-}
-
-.buy-button:hover {
-    opacity: 0.5;
+    /*Допустим ...*/
+    padding-bottom: 27px;
+    padding-top: 27px;
+    padding-left: 21px;
 }
 
 /*--------------------FOOTER----------------------*/

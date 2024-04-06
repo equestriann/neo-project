@@ -22,7 +22,7 @@ export default function Cart () {
     }
 
     return (
-        <div className="wrapper">
+        <div>
             {totalQuantity ?
                 <h3>Корзина</h3> :
                 <h3 style={{textAlign:"center"}}>Корзина пуста</h3>}
