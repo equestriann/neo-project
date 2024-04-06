@@ -15,12 +15,19 @@ export default function Goods({ good }) {
             </div>
             <div className="product-info">
                 <div className="left-column">
-                    <p id="prod-title">Название</p>
-                    <p id="prod-rating">Рейтинг</p>
+                    <p>{good.title}</p>
+                    <p>
+                        <span id="rating-star">&#9733;</span>
+                        <span id="rating">{good.rating}</span>
+                    </p>
                 </div>
                 <div className="right-column">
-                    <p>Цена</p>
-                    <p>Купить</p>
+                    <p id="price">{good.price}</p>
+                    <p>
+                        <button id="buy-button" onClick={handleBuyClick}>
+                            Купить
+                        </button>
+                    </p>
                 </div>
             </div>
         </div>

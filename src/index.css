@@ -79,9 +79,9 @@ main {
     /*margin-bottom: 21px;*/
 }
 
-/*main p {*/
-/*    margin: 0;*/
-/*}*/
+main p {
+    margin: 0;
+}
 
 main h3 {
     padding-bottom: 20px;
@@ -124,12 +124,49 @@ main .product-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+main .product-info .left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main .product-info .right-column {
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+main .product-info #price {
+    color: #FFA542;
+}
+
+main .product-info #rating-star {
+    color: #FFCE7F;
+}
+
+main .product-info #rating {
+    color: #838383;
+    padding-left: 5px;
+}
+
+main .product-info #buy-button {
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    transition: opacity 300ms ease;
+}
+
+main .product-info #buy-button:hover {
+    opacity: 70%;
+}
 
 
 /*--------------------FOOTER----------------------*/
