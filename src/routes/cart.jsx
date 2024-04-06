@@ -42,18 +42,22 @@ export default function Cart () {
                             </div>
                             <div className="product-info">
                                 <p>{good.title}</p>
-                                <p id="price-small">{good.price} ₽</p>
+                                <p id="price-small">{good.price.toLocaleString('ru-RU')} ₽</p>
                             </div>
                             <div className="delete-n-price">
                                 <RiDeleteBin2Line id="item-delete-btn" onClick={() => deleteGood(good)}/>
-                                <p>{good.price} ₽</p>
+                                <p>{(good.price * good.quantity).toLocaleString('ru-RU')} ₽</p>
                             </div>
                         </div>
                     )}
                 </div>
                 {!totalQuantity ? null :
                     <div className="total-container">
-                        Here's gonna be oder sumup
+                        <div className="total-info">
+                            <p>ИТОГО</p>
+                            <p>₽ {totalPrice.toLocaleString('ru-RU')}</p>
+                        </div>
+                        <button id="order-btn">Перейти к оформлению</button>
                     </div>
                 }
             </div>

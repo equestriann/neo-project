@@ -11,8 +11,7 @@ export default function Goods({ good }) {
     return (
         <div className="product-card">
             <div className="product-image">
-                <img src={good.picture} alt=""/>
-                {/*this is product image*/}
+                <img src={good.picture} alt="Product image"/>
             </div>
             <div className="product-info">
                 <div className="left-column">
@@ -23,7 +22,7 @@ export default function Goods({ good }) {
                     </p>
                 </div>
                 <div className="right-column">
-                    <p id="price">{good.price}</p>
+                    <p id="price">{good.price} ₽</p>
                     <p>
                         <button id="buy-button" onClick={handleBuyClick}>
                             Купить
