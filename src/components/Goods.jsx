@@ -9,18 +9,19 @@ export default function Goods({ good }) {
     }
 
     return (
-        <div className="good">
-            {/*<img src={good.picture} alt=""/>*/}
-            <div className="good-details">
-                <p>
-                    {good.title}
-                    <span className="good-price">{good.price}₽</span>
-                </p>
-                <p>
-                    <span className="star">&#9733;</span>
-                    {good.rating}
-                    <button className="buy-button" onClick={handleBuyClick}>Купить</button>
-                </p>
+        <div className="product-card">
+            <div className="product-image">
+                <span>this is product image</span>
+            </div>
+            <div className="product-info">
+                <div className="left-column">
+                    <p id="prod-title">Название</p>
+                    <p id="prod-rating">Рейтинг</p>
+                </div>
+                <div className="right-column">
+                    <p>Цена</p>
+                    <p>Купить</p>
+                </div>
             </div>
         </div>
     )

@@ -6,14 +6,14 @@ export default function MainPage (addToCart) {
 
     return (
         <main>
-            <p className="category-name"> Наушники </p>
+            <h3> Наушники </h3>
             <div className="category-content">
                 {wired.map(good =>
                     <Goods good={good} key={good.id} addToCart={addToCart}/>)}
                 {wired.map(good =>
                     <Goods good={good} key={good.id} addToCart={addToCart}/>)}
             </div>
-            <p className="category-name"> Беспроводные наушники </p>
+            <h3> Беспроводные наушники </h3>
             <div className="category-content">
                 {wireless.map(good =>
                     <Goods good={good} key={good.id} addToCart={addToCart}/>)}

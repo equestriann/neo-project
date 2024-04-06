@@ -79,15 +79,16 @@ main {
     /*margin-bottom: 21px;*/
 }
 
-main p {
-    margin: 0;
-}
+/*main p {*/
+/*    margin: 0;*/
+/*}*/
 
-main .category-name {
+main h3 {
     padding-bottom: 20px;
     font-weight: 600;
     font-size: 20px;
     color: #838383;
+    margin: 0;
 }
 
 main .category-content {
@@ -96,26 +97,40 @@ main .category-content {
     justify-content: space-between;
 }
 
-main .good {
+main .product-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    /*align-items: flex-start;*/
     background-color: #FFFFFF;
     border-radius: 30px;
-    width: 350px;
-    height: 407px;
+    width: 306px;
+    height: 353px;
     margin-bottom: 26px;
     box-shadow: 0 0 20px 0 #0000001A;
-;
+    padding: 27px 22px;
 }
 
-main .good-details {
-    /*Допустим ...*/
-    padding-bottom: 27px;
-    padding-top: 27px;
-    padding-left: 21px;
+main .product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+main .product-info {
+    height: 74px;
+    justify-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .product-info .right-column {
+    text-align: right;
+}
+
+
 
 /*--------------------FOOTER----------------------*/
 
