@@ -11,7 +11,8 @@ export default function Goods({ good }) {
     return (
         <div className="product-card">
             <div className="product-image">
-                <span>this is product image</span>
+                <img src={good.picture} alt=""/>
+                {/*this is product image*/}
             </div>
             <div className="product-info">
                 <div className="left-column">
