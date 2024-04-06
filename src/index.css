@@ -72,7 +72,7 @@ header .cart-counter {
 }
 
 
-/*--------------------MAIN-----------------------*/
+/*----------------MAIN PAGE------------------*/
 
 main {
     margin-top: 13px;
@@ -168,6 +168,99 @@ main .product-info #buy-button {
 }
 
 main .product-info #buy-button:hover {
+    opacity: 70%;
+}
+
+/*--------------------CART PAGE-----------------------*/
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-container p, span {
+    margin: 0;
+    font-weight: 600;
+    font-size: inherit;
+}
+
+.cart-container .item-card {
+    display: flex;
+    justify-items: flex-start;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px 0 #0000001A;
+    border-radius: 30px;
+    width: 615px;
+    height: 200px;
+    padding: 18px;
+    margin-bottom: 26px;
+}
+
+.cart-container .item-card .img-n-quant {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-container .item-card .img-n-quant img {
+    max-height: 136px;
+    width: initial;
+}
+
+.cart-container .item-card .img-n-quant .quant-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-container .item-card .product-info {
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+}
+
+.cart-container .item-card .product-info #price-small {
+    padding-top: 12px;
+    font-size: 15px;
+    color: #AAAAAA;
+}
+
+.cart-container .item-card .delete-n-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    align-items: end;
+}
+
+#quant-btn {
+    background-color: #FFCE7F;
+    color: #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: opacity 300ms ease;
+}
+
+#quant-btn:hover {
+    opacity: 70%;
+}
+
+#item-delete-btn {
+    color: #DF6464;
+    width: 25px;
+    height: 22px;
+    justify-self: self-end;
+    cursor: pointer;
+    transition: opacity 300ms ease;
+}
+
+#item-delete-btn:hover {
     opacity: 70%;
 }
 
@@ -301,6 +394,3 @@ footer .footer-item:nth-child(11) {
     height: 35px;
     padding-top: 5px;
 }
-
-/*--------------------CART PAGE-----------------------*/
-
